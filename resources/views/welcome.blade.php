@@ -54,5 +54,8 @@
                 <img src="{{ Vite::asset('/resources/img/bell-tent.jpg') }}" class="rounded-lg" />
             </div>
         </section>
+        <section class="flex gap-4 px-8 max-w-7xl w-full mx-auto">
+            <livewire:rsvp-form />
+        </section>
     </article>
 </x-layout>
