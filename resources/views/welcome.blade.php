@@ -1,61 +1,80 @@
 <x-layout>
-    <article class="space-y-12">
-        <header class="max-w-7xl w-full mx-auto">
-            <img src="{{ Vite::asset('resources/img/wedding-hero.jpg') }}" />
+    <article class="pb-8 space-y-4 lg:space-y-12">
+        <header class="max-w-7xl w-full mx-auto lg:px-16">
+            <img class="mb-2 lg:mb-8" src="{{ Vite::asset('resources/img/wedding-hero.jpg') }}" />
 
-            <div class="p-8">
+            <div class="px-4 lg:px-8">
                 <h3 class="pb-4 text-2xl">
                     Join us at the Wedding of:
                 </h3>
 
-                <h1 class="text-3xl text-center font-serif lg:text-8xl">
-                    Mary-Anne &amp; Alex
+                <h1 class="text-5xl text-center leading-relaxed font-serif lg:text-8xl">
+                    Mary-Anne
+                    <span class="block lg:inline">
+                        &amp;
+                    </span>
+                    Alex
                 </h1>
             </div>
         </header>
 
-        <section class="flex px-8 max-w-7xl w-full mx-auto">
+        <x-section>
             <flux:card class="space-y-6">
-                <div>
-                    <flux:heading size="xl" class="flex gap-2 items-center">
-                        <flux:icon.clock />
+                <flux:heading size="xl" class="flex gap-2 items-center">
+                    <flux:icon.clock />
 
-                        Saturday, 28th June 2025
-                    </flux:heading>
-                    <flux:subheading class="flex gap-2 items-center">
-                        <flux:icon.map-pin />
+                    Saturday, 28th June 2025
+                </flux:heading>
+                <flux:subheading class="flex gap-2 items-center">
+                    <flux:icon.map-pin />
 
-                        Haha Farm, Hemblington Rd, Blofield, Norwich NR13 4AH
-                    </flux:subheading>
-                </div>
+                    Haha Farm, Hemblington Rd, Blofield, Norwich NR13 4AH
+                </flux:subheading>
             </flux:card>
 
             <div>
 
             </div>
-        </section>
+        </x-section>
 
-        <section class="flex gap-4 px-8 max-w-7xl w-full mx-auto">
-            <div>
-                <h3 class="py-6 text-7xl font-serif">
-                    Pitch Up
-                </h3>
+        <x-section>
+            <div class="flex flex-col gap-4 lg:flex-row-reverse">
+                <div class="-mx-4 overflow-hidden sm:mx-0 lg:rounded-lg">
+                    <img src="{{ Vite::asset('resources/img/bell-tent.jpg') }}" />
+                </div>
 
-                <p>
-                    We have a campsite!! We've partnered with
-                    <a href="https://www.norfolkbells.co.uk/wedding-mez-alex/" class="underline">
-                        Norfolk Bells
-                    </a>
-                    to make hiring a Bell Tent super easy, book directly via our portal and they will get it setup,
-                    delivered, and ready for your arrival, and packed down after.
-                </p>
+                <div class="space-y-1">
+                    <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+                        Pitch Up
+                    </h3>
+
+                    <h4 class="text-2xl">
+                        We have a campsite!!
+                    </h4>
+
+                    <p>
+                        Bring your tent and join us for a night under the stars by the fire.
+                    </p>
+
+                    <p>
+                        Don't have your own tent, or want a fancier &amp; easier option? We've teamed up with
+                        <a href="https://www.norfolkbells.co.uk/wedding-mez-alex/" class="underline">
+                            Norfolk Bells
+                        </a>
+                        to make hiring a Bell Tent super easy, book directly via our portal and they will get it
+                        setup,
+                        delivered, and ready for your arrival, and packed down after. No faffing aboot!
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="{{ Vite::asset('resources/img/bell-tent.jpg') }}" class="rounded-lg" />
-            </div>
-        </section>
-        <section class="flex gap-4 px-8 max-w-7xl w-full mx-auto">
+        </x-section>
+
+        <x-section>
+            <h3 class="mb-4 text-5xl font-serif leading-relaxed lg:text-5xl">
+                Répondez S’il Vous Plaît
+            </h3>
+
             <livewire:rsvp-form />
-        </section>
+        </x-section>
     </article>
 </x-layout>

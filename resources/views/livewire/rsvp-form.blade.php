@@ -2,7 +2,6 @@
     <flux:input wire:model="name" label="Your name" />
     <flux:input wire:model="email" label="Your email" type="email" />
 
-
     <flux:field>
         <flux:label>Who ya bringing?</flux:label>
 
@@ -21,9 +20,13 @@
 
     <flux:textarea wire:model="dietaries" label="Dietaries, or allergies" placeholder="" />
 
-    <flux:radio.group wire:model="" label="Camping" variant="cards" class="flex-col">
+    <flux:radio.group wire:model="camping" label="Camping" variant="cards" class="flex-col">
         <flux:radio value="no" label="No, my bed is my grail" />
         <flux:radio value="owned" label="Yes - I'm bringing my tent" description="2-5 business days" />
         <flux:radio value="hire" label="Yes - I'm going to hire a Bell Tent" description="1 business day" />
     </flux:radio.group>
+
+    <flux:button type="submit" icon-trailing="paper-airplane">
+        RSVP
+    </flux:button>
 </form>
