@@ -1,7 +1,7 @@
 <x-layout>
     <article class="space-y-12">
         <header class="max-w-7xl w-full mx-auto">
-            <img src="{{ Vite::asset('../img/wedding-hero.jpg') }}" />
+            <img src="{{ Vite::asset('resources/img/wedding-hero.jpg') }}" />
 
             <div class="p-8">
                 <h3 class="pb-4 text-2xl">
@@ -51,7 +51,7 @@
                 </p>
             </div>
             <div>
-                <img src="{{ Vite::asset('../img/bell-tent.jpg') }}" class="rounded-lg" />
+                <img src="{{ Vite::asset('resources/img/bell-tent.jpg') }}" class="rounded-lg" />
             </div>
         </section>
         <section class="flex gap-4 px-8 max-w-7xl w-full mx-auto">
