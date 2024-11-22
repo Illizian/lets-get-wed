@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="The Wedding of Alex & Mez">
     <article class="pb-8 space-y-4 lg:space-y-12">
         <header class="max-w-7xl w-full mx-auto lg:px-16">
             <img class="mb-2 lg:mb-8" src="{{ Vite::asset('resources/img/wedding-hero.jpg') }}" />
@@ -19,21 +19,45 @@
         </header>
 
         <x-section>
-            <flux:card class="space-y-6">
-                <flux:heading size="xl" class="flex gap-2 items-center">
-                    <flux:icon.clock />
+            <div class="flex flex-col gap-4 md:flex-row">
+                <flux:card class="space-y-6">
+                    <flux:heading size="xl" class="flex gap-2 items-center">
+                        <flux:icon.clock />
 
-                    Saturday, 28th June 2025
-                </flux:heading>
-                <flux:subheading class="flex gap-2 items-center">
-                    <flux:icon.map-pin />
+                        Saturday, 28th June 2025
+                    </flux:heading>
+                    <flux:subheading class="flex gap-2 items-center">
+                        <flux:icon.map-pin />
 
-                    Haha Farm, Hemblington Rd, Blofield, Norwich NR13 4AH
-                </flux:subheading>
-            </flux:card>
+                        Haha Farm, Hemblington Rd, Blofield, Norwich NR13 4AH
+                    </flux:subheading>
+                </flux:card>
 
-            <div>
+                <div>
+                    <flux:button variant="primary" href="#rsvp" class="w-full">RSVP Now</flux:button>
+                </div>
+            </div>
+        </x-section>
 
+        <x-section>
+            <div class="flex flex-col gap-4">
+                <div class="space-y-1">
+                    <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+                        The Farm
+                    </h3>
+
+                    <h4 class="text-2xl">
+                        Situated in the middle of nowhere, otherwise known as Blofield.
+                    </h4>
+
+                    <p>
+                        You can find us on Haha Farm. Where we'll be celebrating, surrounded by fields and nature.
+                    </p>
+                </div>
+
+                <div class="-mx-4 overflow-hidden sm:mx-0 lg:rounded-lg">
+                    <img src="{{ Vite::asset('resources/img/haha-farm-map.jpg') }}" />
+                </div>
             </div>
         </x-section>
 
@@ -70,7 +94,7 @@
         </x-section>
 
         <x-section>
-            <h3 class="mb-4 text-5xl font-serif leading-relaxed lg:text-5xl">
+            <h3 id="rsvp" class="mb-4 text-5xl font-serif leading-relaxed lg:text-5xl">
                 Répondez S’il Vous Plaît
             </h3>
 
