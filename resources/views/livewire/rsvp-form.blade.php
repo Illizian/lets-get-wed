@@ -7,15 +7,22 @@
     <flux:field>
         <flux:label>Who ya bringing?</flux:label>
 
-        <div class="grid grid-cols-2 gap-2">
-            <flux:input wire:model="form.guests_adult" type="number" label="Adults" />
-            <flux:input wire:model="form.guests_child" type="number" label="Children" />
-        </div>
-
         <flux:description>
             Let us know if you're bringing guests, and whether you're bringing children (so we can bring enough food,
             drink, and cages).
         </flux:description>
+
+        <div x-data="{ 'guests': @entangle('form.guests') }">
+            <ol>
+                <template x-for="(guest, index) in guests" :key="index">
+                    <li class="flex gap-2 mb-1 last:mb-2">
+                        <flux:input icon="user" x-model="guests[index]" />
+                    </li>
+                </template>
+            </ol>
+
+            <flux:button icon="plus" @click="guests.push('')">Add Guest</flux:button>
+        </div>
     </flux:field>
 
     <flux:textarea wire:model="form.dietaries" label="Dietaries, or allergies"

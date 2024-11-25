@@ -8,16 +8,12 @@ use Livewire\Form;
 class RsvpResponse extends Form
 {
     #[Validate('required|min:3')]
-    public string $name;
+    public string $name = '';
 
     #[Validate('required|email')]
-    public string $email;
+    public string $email = '';
 
-    #[Validate('sometimes|number|max:2')]
-    public array $guests_adult;
-
-    #[Validate('sometimes|number|max:2')]
-    public array $guests_children;
+    public array $guests = [];
 
     public string $dietaries;
 
@@ -28,6 +24,6 @@ class RsvpResponse extends Form
     {
         $this->validate();
 
-        dump($this->all());
+        dd($this->all());
     }
 }
