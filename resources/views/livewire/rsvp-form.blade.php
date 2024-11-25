@@ -16,12 +16,20 @@
             <ol>
                 <template x-for="(guest, index) in guests" :key="index">
                     <li class="flex gap-2 mb-1 last:mb-2">
-                        <flux:input icon="user" x-model="guests[index]" />
+                        <flux:input x-model="guests[index]['name']">
+                            <x-slot name="iconLeading">
+                                <flux:icon.face-smile x-show="guest.child" />
+                                <flux:icon.user x-show="!guest.child" />
+                            </x-slot>
+                        </flux:input>
                     </li>
                 </template>
             </ol>
 
-            <flux:button icon="plus" @click="guests.push('')">Add Guest</flux:button>
+            <div class="flex gap-2">
+                <flux:button icon="plus" @click="guests.push({ name: '', child: false })">Add Guest</flux:button>
+                <flux:button icon="plus" @click="guests.push({ name: '', child: true })">Add Child</flux:button>
+            </div>
         </div>
     </flux:field>
 
