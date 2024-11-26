@@ -34,6 +34,7 @@
     </flux:field>
 
     <flux:textarea wire:model="form.dietaries" label="Dietaries, or allergies"
+        description="If you or your guests have any allergies or dietary requirements. Please also let us know who amongst you is effected so we can play appropriately & we can ensure they're catered for."
         placeholder="E.g., vegetarian, gluten-free, nut allergy, lactose intolerance, dislikes fruit, etc." />
 
     <flux:radio.group wire:model="form.camping" label="Camping" variant="cards" class="flex-col">
