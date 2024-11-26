@@ -19,7 +19,7 @@
     @fluxStyles
 </head>
 
-<body class="bg-zinc-50 text-zinc-700 dark:text-zinc-50 dark:bg-black">
+<body class="bg-zinc-50 text-zinc-700 dark:text-zinc-50">
     <main class="flex h-full">
         <div class="fixed w-full inset-0 flex justify-center sm:px-8">
             <div class="flex w-full max-w-7xl lg:px-8">
