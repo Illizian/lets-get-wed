@@ -38,9 +38,12 @@
         placeholder="E.g., vegetarian, gluten-free, nut allergy, lactose intolerance, dislikes fruit, etc." />
 
     <flux:radio.group wire:model="form.camping" label="Camping" variant="cards" class="flex-col">
-        <flux:radio value="no" label="No, my bed is my grail" />
-        <flux:radio value="owned" label="Yes - I'm bringing my tent" description="2-5 business days" />
-        <flux:radio value="hire" label="Yes - I'm going to hire a Bell Tent" description="1 business day" />
+        <flux:radio value="no" label="No, my bed is my grail"
+            description="We aren't messing about, we've a proper bed and a large bell tent, glamping! We would totally be picking this option as guests 😆" />
+        <flux:radio value="owned" label="Yes - I'm bringing my tent"
+            description="Whilst we have a large space for camping, please don't bring a entire campus with you." />
+        <flux:radio value="hire" label="Yes - I'm going to hire a Bell Tent"
+            description="Please be sure to visit our portal and hire your tent - they'll have it delivered and setup for you." />
     </flux:radio.group>
 
     <flux:button type="submit" icon-trailing="paper-airplane">

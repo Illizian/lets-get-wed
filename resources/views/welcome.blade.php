@@ -19,7 +19,7 @@
         </header>
 
         <x-section>
-            <div class="flex flex-col gap-4 md:flex-row">
+            <div class="flex flex-col gap-4 lg:max-w-96">
                 <flux:card class="space-y-6">
                     <flux:heading size="xl" class="flex gap-2 items-center">
                         <flux:icon.clock />
@@ -61,7 +61,6 @@
             </div>
         </x-section>
 
-
         <x-section>
             <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
                 The Cunning Plan
@@ -92,6 +91,90 @@
         </x-section>
 
         <x-section>
+
+            <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+                Parking, Transport, &amp; Facilities!
+            </h3>
+
+            <h4 class="text-5xl font-serif leading-relaxed">
+                Parking
+            </h4>
+
+            <p>
+                We have "proper" parking on-site, with two seperate parking areas. You'll find the first at the entrace
+                of the site. The other can be found at the top of field above the barn, follow the road around to the
+                top and find yourself a spot.
+            </p>
+
+            <p>
+                If you're able body'd we ask you to fill up the first area first, (it's only a short walk). Those
+                camping, we advise parking closer.
+            </p>
+
+            <h4 class="text-5xl font-serif leading-relaxed">
+                Train-age
+            </h4>
+
+            <p>
+                We're actually slap bang between
+                <a href="https://maps.app.goo.gl/Ad5WkDuNAHPv8C1u7" target="_blank">Brundall</a> &amp;
+                <a href="https://maps.app.goo.gl/JnWuc6BgoNaiH4jr8"target="_blank">Lingwood</a>
+                Train Stations. The last train to Norwich is 00:03 (prior; 22:37, 23:22, 23:55).
+            </p>
+
+            <h4>Facilities</h4>
+
+            <p>
+                We have proper toilets on-site. 240v generators. Unfortunately, the site isn't very accessible friendly;
+                however, there are no stairs, and the ground is flat &amp; consistent.
+            </p>
+        </x-section>
+
+
+        <x-section>
+
+            <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+                Provisions
+            </h3>
+
+            <h4 class="text-2xl">
+                Food, drink, snacks, beer, BBQ...
+            </h4>
+
+            <p>
+                See our timeline for a run down of timings, but we'll have plenty of food and soft-drinks on-hand.
+                Snacks throughout the day. We've a BBQ in the evening, and a paid bar stocked full of Redwell goodness.
+            </p>
+
+            <p>
+                Let us know when RSVPing, who and what allergies we need to be aware of. And, any special requests.
+            </p>
+        </x-section>
+
+        <x-section>
+            <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+                Dress Code?
+            </h3>
+
+            <h4 class="text-2xl">
+                There isn't one!... but...
+            </h4>
+
+            <p>
+                If, like us, that suit or dress only see's the light of the day at Weddings, please join us in your
+                fanciest garb!
+            </p>
+
+            <p>
+                We however, <span class="font-bold underline">embrace all</span>! Dress in whatever you're comfortable.
+                We are on a farm, and mud is a real
+                possibility - definetly <span class="font-bold underline">wear some sensible shoes</span> and bring a
+                warm jumper,
+                we are still in the UK, and we'll be sitting by the fire into the evening!
+            </p>
+        </x-section>
+
+        <x-section>
             <div class="flex flex-col gap-4 lg:flex-row-reverse">
                 <div class="-mx-4 overflow-hidden sm:mx-0 lg:rounded-lg">
                     <img src="{{ Vite::asset('resources/img/bell-tent.jpg') }}" />
@@ -112,7 +195,7 @@
 
                     <p>
                         Don't have your own tent, or want a fancier &amp; easier option? We've teamed up with
-                        <a href="https://www.norfolkbells.co.uk/wedding-mez-alex/" class="underline">
+                        <a href="https://www.norfolkbells.co.uk/wedding-mez-alex/">
                             Norfolk Bells
                         </a>
                         to make hiring a Bell Tent super easy, book directly via our portal and they will get it

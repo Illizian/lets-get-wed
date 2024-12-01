@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="relative flex w-full flex-col sm:px-8 lg:px-16">
+        <div class="relative flex w-full flex-col sm:px-8">
             {{ $slot }}
         </div>
     </main>
