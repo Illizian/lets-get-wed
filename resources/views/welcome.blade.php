@@ -1,6 +1,6 @@
 <x-layout title="The Wedding of Alex & Mez">
     <article class="pb-8 space-y-4 lg:space-y-12">
-        <header class="max-w-7xl w-full mx-auto lg:px-16">
+        <header class="max-w-7xl w-full mx-auto">
             <img class="mb-2 lg:mb-8" src="{{ Vite::asset('resources/img/wedding-hero.jpg') }}" />
 
             <div class="px-4 lg:px-8">
