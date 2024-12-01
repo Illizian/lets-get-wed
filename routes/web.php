@@ -9,4 +9,4 @@ Route::get('/', function () {
 
 Route::get('/rsvp/{response}', function (Response $response) {
     return view('rsvp', ['rsvp' => $response]);
-});
+})->name('rsvp');

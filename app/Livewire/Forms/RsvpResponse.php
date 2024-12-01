@@ -36,13 +36,13 @@ class RsvpResponse extends Form
     {
         $attributes = $this->validate();
 
-        // ProcessRsvpResponse::dispatch($attributes);
+        ProcessRsvpResponse::dispatch($attributes);
     }
 
     public function update(Response $rsvp): void
     {
         $attributes = $this->validate();
 
-        // $rsvp->update($attributes);
+        $rsvp->update($attributes);
     }
 }
