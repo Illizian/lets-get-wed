@@ -16,4 +16,8 @@ class Response extends Model
         'dietaries',
         'camping',
     ];
+
+    public $casts = [
+        'guests' => 'array',
+    ];
 }

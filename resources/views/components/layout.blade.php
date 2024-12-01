@@ -32,6 +32,8 @@
         </div>
     </main>
 
+    <flux:toast />
+
     @livewireScripts
     @fluxScripts
 </body>

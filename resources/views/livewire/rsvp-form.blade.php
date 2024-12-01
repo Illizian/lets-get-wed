@@ -47,6 +47,10 @@
     </flux:radio.group>
 
     <flux:button type="submit" variant="filled" icon-trailing="paper-airplane">
-        RSVP
+        @if ($rsvp)
+            Update RSVP
+        @else
+            RSVP
+        @endif
     </flux:button>
 </form>
