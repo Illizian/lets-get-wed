@@ -46,7 +46,7 @@
             description="Please be sure to visit our portal and hire your tent - they'll have it delivered and setup for you." />
     </flux:radio.group>
 
-    <flux:button type="submit" icon-trailing="paper-airplane">
+    <flux:button type="submit" variant="filled" icon-trailing="paper-airplane">
         RSVP
     </flux:button>
 </form>

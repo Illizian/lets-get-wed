@@ -1,5 +1,5 @@
 <x-layout title="The Wedding of Alex & Mez">
-    <article class="pb-8 space-y-12 lg:space-y-24">
+    <article class="space-y-12 lg:space-y-24">
         <header class="max-w-7xl w-full mx-auto">
             <img class="mb-6 lg:mb-8" src="{{ Vite::asset('resources/img/wedding-hero.jpg') }}" />
 
@@ -119,6 +119,10 @@
                     camping, we advise parking closer.
                 </p>
 
+                <div class="overflow-hidden lg:rounded-lg">
+                    <img src="{{ Vite::asset('resources/img/mez-alex-choo-choo.jpg') }}" />
+                </div>
+
                 <h4 class="text-3xl font-serif leading-relaxed lg:text-5xl">
                     Train-age
                 </h4>
@@ -228,7 +232,24 @@
                 Répondez S’il Vous Plaît
             </h3>
 
-            <livewire:rsvp-form />
+            <div class="md:grid md:grid-cols-12 md:gap-4 md:pb-8">
+                <div class="col-span-8">
+                    <livewire:rsvp-form />
+                </div>
+
+                <div class="col-span-4 space-y-4">
+                    <div class="mt-4 -mx-4 overflow-hidden lg:rounded-lg md:m-0">
+                        <img src="{{ Vite::asset('resources/img/mez-alex-inquisition.jpg') }}" />
+                    </div>
+
+                    <div class="hidden md:block overflow-hidden lg:rounded-lg">
+                        <img src="{{ Vite::asset('resources/img/mez-alex-yoo-hoo.jpg') }}" />
+                    </div>
+
+                    <div class="hidden md:block overflow-hidden lg:rounded-lg">
+                        <img src="{{ Vite::asset('resources/img/mez-alex-you-ok-hun.jpg') }}" />
+                    </div>
+                </div>
         </x-section>
     </article>
 </x-layout>
