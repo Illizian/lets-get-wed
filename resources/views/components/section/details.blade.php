@@ -3,7 +3,8 @@
         <flux:heading size="xl" class="flex gap-2 items-center">
             <flux:icon.clock />
 
-            Saturday, 28th June 2025
+
+            {{ $timeline[0]['datetime'] }}
         </flux:heading>
         <flux:subheading class="flex gap-2 items-center">
             <flux:icon.map-pin />

@@ -3,7 +3,7 @@
         <x-section.header />
 
         <x-section>
-            <x-section.details />
+            <x-section.details :timeline="$timeline" />
         </x-section>
 
         <x-section>

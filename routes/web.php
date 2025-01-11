@@ -4,7 +4,7 @@ use App\Models\Response;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $timeline = array_slice(config('timeline'), 3);
+    $timeline = array_slice(config('timeline'), 4);
 
     return view('home', compact('timeline'));
 });
