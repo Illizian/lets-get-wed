@@ -11,7 +11,7 @@
         </x-section>
 
         <x-section>
-            <x-section.timeline />
+            <x-section.timeline :timeline="$timeline" />
         </x-section>
 
         <x-section>
