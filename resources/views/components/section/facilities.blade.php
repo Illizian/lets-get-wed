@@ -1,4 +1,8 @@
 <div class="space-y-2 lg:space-y-4">
+    <div class="pb-4 overflow-hidden lg:rounded-lg">
+        <img src="{{ Vite::asset('resources/img/mez-alex-choo-choo.jpg') }}" />
+    </div>
+
     <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
         Parking, Transport, &amp; Facilities!
     </h3>
@@ -19,10 +23,6 @@
         If you're able body'd we ask you to fill up the first area first, (it's only a short walk). Those
         camping, we advise parking closer.
     </p>
-
-    <div class="overflow-hidden lg:rounded-lg">
-        <img src="{{ Vite::asset('resources/img/mez-alex-choo-choo.jpg') }}" />
-    </div>
 
     <h4 class="text-3xl font-serif leading-relaxed lg:text-5xl">
         Train-age

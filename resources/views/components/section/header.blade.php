@@ -3,7 +3,7 @@
 
     <div class="px-4 lg:px-8">
         <h3 class="pb-4 text-2xl">
-            Join us at the Wedding of:
+            You're invited to the Wedding of:
         </h3>
 
         <h1 class="text-5xl text-center leading-relaxed font-serif md:text-8xl">

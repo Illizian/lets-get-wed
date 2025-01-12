@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-4 lg:flex-row-reverse">
+<div class="flex flex-col gap-4 lg:flex-row">
     <div class="-mx-4 overflow-hidden sm:mx-0 lg:rounded-lg">
         <img src="{{ Vite::asset('resources/img/bell-tent.jpg') }}" />
     </div>
@@ -25,5 +25,9 @@
             setup,
             delivered, and ready for your arrival, and packed down after. No faffing aboot!
         </p>
+
+        <flux:button variant="primary" href="https://www.norfolkbells.co.uk/wedding-mez-alex/">
+            Camp in style with Norfolk Bells
+        </flux:button>
     </div>
 </div>
