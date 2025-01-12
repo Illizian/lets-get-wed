@@ -21,14 +21,20 @@
                                 <flux:icon.face-smile x-show="guest.child" />
                                 <flux:icon.user x-show="!guest.child" />
                             </x-slot>
+                            <x-slot name="iconTrailing">
+                                <flux:button size="sm" variant="subtle" icon="x-mark" class="-mr-1"
+                                    @click="guests.splice(index, 1)" />
+                            </x-slot>
                         </flux:input>
                     </li>
                 </template>
             </ol>
 
             <div class="flex gap-2">
-                <flux:button icon="plus" @click="guests.push({ name: '', child: false })">Add Guest</flux:button>
-                <flux:button icon="plus" @click="guests.push({ name: '', child: true })">Add Child</flux:button>
+                <flux:button icon="plus" variant="primary" @click="guests.push({ name: '', child: false })">Add Guest
+                </flux:button>
+                <flux:button icon="plus" variant="primary" @click="guests.push({ name: '', child: true })">Add Child
+                </flux:button>
             </div>
         </div>
     </flux:field>
