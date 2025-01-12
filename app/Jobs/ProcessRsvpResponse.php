@@ -13,11 +13,16 @@ class ProcessRsvpResponse implements ShouldQueue
 {
     use Queueable;
 
-    public function __construct(protected array $attributes) {}
+    public function __construct(protected array $attributes, protected ?Response $rsvp) {}
 
     public function handle(): void
     {
-        $response = Response::create($this->attributes);
+        $response = Response::firstOrCreate(
+            ['id' => $this->rsvp?->id],
+            $this->attributes
+        );
+
+        $response->update($this->attributes);
 
         Mail::to($response->email)->send(new RsvpResponseConfirmation($response));
         Mail::to('wedding@alexscotton.com')->send(new RsvpResponseAlert($response));
