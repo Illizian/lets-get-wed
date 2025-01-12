@@ -4,9 +4,9 @@
     </div>
 
     <div class="space-y-2 lg:space-y-4">
-        <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+        <x-headline>
             Pitch Up
-        </h3>
+        </x-headline>
 
         <h4 class="text-2xl">
             We have a campsite!!

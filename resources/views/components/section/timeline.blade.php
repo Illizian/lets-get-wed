@@ -1,9 +1,9 @@
 @props(['timeline'])
 
 <div class="space-y-2 lg:space-y-4">
-    <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+    <x-headline>
         The Cunning Plan
-    </h3>
+    </x-headline>
 
     <p>
         A rough overview of our plans for the weekend.

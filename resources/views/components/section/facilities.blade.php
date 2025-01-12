@@ -1,11 +1,11 @@
 <div class="space-y-2 lg:space-y-4">
-    <div class="pb-4 overflow-hidden lg:rounded-lg">
-        <img src="{{ Vite::asset('resources/img/mez-alex-choo-choo.jpg') }}" />
+    <div class="pb-4 overflow-hidden">
+        <img class="lg:rounded-lg" src="{{ Vite::asset('resources/img/mez-alex-choo-choo.jpg') }}" />
     </div>
 
-    <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+    <x-headline>
         Parking, Transport, &amp; Facilities!
-    </h3>
+    </x-headline>
 
     <h4 class="text-3xl font-serif leading-relaxed lg:text-5xl">
         Parking

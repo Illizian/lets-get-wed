@@ -1,8 +1,8 @@
 <div class="flex flex-col gap-4 lg:flex-row">
     <div class="space-y-2 lg:space-y-4">
-        <h3 class="text-5xl font-serif leading-relaxed lg:text-8xl">
+        <x-headline>
             The Farm
-        </h3>
+        </x-headline>
 
         <h4 class="text-2xl">
             Situated in the middle of nowhere, otherwise known as Blofield.
