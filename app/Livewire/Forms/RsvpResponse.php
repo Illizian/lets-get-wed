@@ -42,7 +42,7 @@ class RsvpResponse extends Form
     {
         $attributes = $this->validate();
 
-        ProcessRsvpResponse::dispatch($attributes);
+        ProcessRsvpResponse::dispatch($attributes, null);
     }
 
     public function update(Response $rsvp): void
