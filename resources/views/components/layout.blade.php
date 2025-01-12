@@ -19,14 +19,14 @@
     @fluxStyles
 </head>
 
-<body class="bg-zinc-50 text-zinc-700 dark:text-zinc-50 dark:bg-zinc-800">
+<body class="bg-sky-50 text-sky-700 dark:text-sky-50 dark:bg-sky-800">
     <main class="flex h-full">
         <div
             class="
                 relative w-full max-w-7xl mx-auto lg:px-8
-                bg-white
-                ring ring-zinc-100
-                dark:bg-zinc-900 dark:ring-zinc-300/20
+                bg-sky-100
+                ring ring-sky-100
+                dark:bg-sky-900 dark:ring-sky-300/20
         ">
             {{ $slot }}
         </div>
