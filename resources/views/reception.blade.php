@@ -31,9 +31,9 @@
         </x-section>
 
         <x-section>
-            <h3 id="rsvp" class="mb-4 text-5xl font-serif leading-relaxed lg:text-5xl">
+            <x-headline id="rsvp">
                 Répondez S’il Vous Plaît
-            </h3>
+            </x-headline>
 
             <p class="my-4 text-2xl">
                 We welcome you to join us for the {{ $timeline[0]['title'] }} on {{ $timeline[0]['datetime'] }}
