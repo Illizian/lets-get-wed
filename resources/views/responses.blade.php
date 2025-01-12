@@ -32,7 +32,9 @@
                                 </ul>
                             </flux:cell>
                             <flux:cell>
-                                {{ $response->dietaries }}
+                                <div class="max-w-64 text-wrap break-words">
+                                    {{ $response->dietaries }}
+                                </div>
                             </flux:cell>
                             <flux:cell>
                                 {{ $response->camping }}
