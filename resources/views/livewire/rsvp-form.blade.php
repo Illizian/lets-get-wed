@@ -38,7 +38,7 @@
         placeholder="E.g., vegetarian, gluten-free, nut allergy, lactose intolerance, dislikes fruit, etc." />
 
     @if ($this->form->ceremony !== App\Enums\CeremonyStatus::NONE->value)
-        <flux:radio.group wire:model.live="form.ceremony" label="Would you like to attend the Ceremony?" variant="cards"
+        <flux:radio.group wire:model="form.ceremony" label="Would you like to attend the Ceremony?" variant="cards"
             description="
                 Our ceremony is exclusive to close family and friends. If you're seeing this,
                 you're welcome to attend and we invite you to express this below.
