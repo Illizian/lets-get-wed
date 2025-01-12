@@ -12,7 +12,7 @@ Route::get('/', function () {
 Route::get('/ceremony', function () {
     $timeline = config('timeline');
 
-    return view('home', compact('timeline'));
+    return view('ceremony', compact('timeline'));
 });
 
 Route::get('/rsvp/{response}', function (Response $response) {

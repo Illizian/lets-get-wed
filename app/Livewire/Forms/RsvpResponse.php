@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Forms;
 
+use App\Enums\CeremonyStatus;
 use App\Jobs\ProcessRsvpResponse;
 use App\Models\Response;
 use Livewire\Attributes\Validate;
@@ -24,12 +25,17 @@ class RsvpResponse extends Form
     #[Validate('required')]
     public string $camping = 'no';
 
+    #[Validate('required')]
+    public string $ceremony = CeremonyStatus::NONE->value;
+
     public function set(Response $rsvp): void
     {
         $this->name = $rsvp->name;
         $this->email = $rsvp->email;
-        $this->dietaries = $rsvp->dietaries ?? '';
         $this->guests = $rsvp->guests;
+        $this->dietaries = $rsvp->dietaries ?? '';
+        $this->camping = $rsvp->camping;
+        $this->ceremony = $rsvp->ceremony->value;
     }
 
     public function store(): void

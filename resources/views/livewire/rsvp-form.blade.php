@@ -37,6 +37,17 @@
         description="If you or your guests have any allergies or dietary requirements. Please also let us know who amongst you is effected so we can play appropriately & we can ensure they're catered for."
         placeholder="E.g., vegetarian, gluten-free, nut allergy, lactose intolerance, dislikes fruit, etc." />
 
+    @if ($this->form->ceremony !== App\Enums\CeremonyStatus::NONE->value)
+        <flux:radio.group wire:model.live="form.ceremony" label="Would you like to attend the Ceremony?" variant="cards"
+            description="
+                Our ceremony is exclusive to close family and friends. If you're seeing this,
+                you're welcome to attend and we invite you to express this below.
+            ">
+            <flux:radio value="{{ App\Enums\CeremonyStatus::ACCEPTED->value }}" label="Yes, please" />
+            <flux:radio value="{{ App\Enums\CeremonyStatus::DECLINED->value }}" label="No, thank you" />
+        </flux:radio.group>
+    @endif
+
     <flux:radio.group wire:model="form.camping" label="Camping" variant="cards" class="flex-col">
         <flux:radio value="no" label="No, my bed is my grail"
             description="We aren't messing about, we've a proper bed and a large bell tent, glamping! We would totally be picking this option as guests 😆" />

@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Enums\CeremonyStatus;
 use App\Livewire\Forms\RsvpResponse;
 use App\Models\Response;
 use Flux\Flux;
@@ -10,6 +11,8 @@ use Livewire\Component;
 
 class RsvpForm extends Component
 {
+    public string $ceremony = CeremonyStatus::NONE->value;
+
     public ?Response $rsvp = null;
 
     public RsvpResponse $form;
@@ -42,6 +45,8 @@ class RsvpForm extends Component
     {
         if ($this->rsvp) {
             $this->form->set($this->rsvp);
+        } else {
+            $this->form->ceremony = $this->ceremony;
         }
     }
 

@@ -35,6 +35,10 @@
                 Répondez S’il Vous Plaît
             </h3>
 
+            <p class="my-4 text-2xl">
+                We welcome you to join us for the {{ $timeline[0]['title'] }} on {{ $timeline[0]['datetime'] }}
+            </p>
+
             <div class="md:grid md:grid-cols-12 md:gap-4 md:pb-8">
                 <div class="col-span-8">
                     <livewire:rsvp-form />
