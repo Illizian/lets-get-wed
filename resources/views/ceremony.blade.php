@@ -31,6 +31,10 @@
         </x-section>
 
         <x-section>
+            <x-section.gifts />
+        </x-section>
+
+        <x-section>
             <x-headline id="rsvp">
                 Répondez S’il Vous Plaît
             </x-headline>
