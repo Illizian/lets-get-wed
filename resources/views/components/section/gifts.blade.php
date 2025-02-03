@@ -4,7 +4,7 @@
     </x-headline>
 
     <h4 class="text-2xl">
-        A few have enquired about a gifts; whether we have a list or similar.
+        A few have enquired about gifts; whether we have a list or similar.
     </h4>
 
     <p>
@@ -17,8 +17,10 @@
         If you feel comfortable doing so, then we welcome you to donate towards our spa retreat.
     </p>
 
-    <flux:button variant="primary"
-        href="https://settleup.starlingbank.com/alexscottonmaryannebarfield?message=Honeymoon%20Fund">
+    <flux:button
+        variant="primary"
+        href="https://settleup.starlingbank.com/alexscottonmaryannebarfield?message=Honeymoon%20Fund"
+    >
         Send a gift
     </flux:button>
 </div>
